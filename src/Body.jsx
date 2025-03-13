@@ -28,7 +28,7 @@ export default function Body() {
   async function getResturant() {
     
     const data = await fetch(
-      "https://cors-anywhere.herokuapp.com/+www.swiggy.com/dapi/restaurants/list/v5?lat=17.456333351378966&lng=78.37263149036954&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      " https://api.allorigins.win/get?url+https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.456333351378966&lng=78.37263149036954&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
     const json = await data.json();
     setFilter(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
